@@ -84,3 +84,8 @@ form input{
     text-decoration: none;
     color: #74b0ed;
 }
+
+.terms{
+    display: flex;
+    /* width: 100%; */
+}

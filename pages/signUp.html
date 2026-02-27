@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/loginStyle.css">
+    <link rel="stylesheet" href="/styles/signUpStyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,12 +15,22 @@
         <section class="loginForm">
 
             <form action="">
-                <label for="email">Email or phone number</label>
+                <label for="email">Email</label>
                 <input type="email" id="email">
+
+                <label for="phoneNumber">Phone number</label>
+                <input type="number" id="phoneNumber">
 
                 <label for="password">Password</label>
                 <input type="password" id="password">
-                <p class="forgotLink">Forgot Password?</p>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword">
+
+                <div class="terms">
+                    <input type="checkbox" name="tandc" id="tandc">
+                    <label for="tandc">I agree to the <a href="">Terms & conditions</a> and <a href="">Privacy Policy</a></label>
+                </div>
 
                 <button class="continueBtn">Continue</button>
             </form>
@@ -32,7 +42,7 @@
         <section class="accounts">
             <div><img src="/assets/icons/google.png" width="25px"><span>Continue with Google</span></div>
             <div><img src="/assets/icons/facebook.png" width="25px" alt=""><span>Continue with Apple</span></div>
-            <p>Don't have an account? <a href="signUp.html">Create an account.</a></p>
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
         </section>
     </main>
 </body>
