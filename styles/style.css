@@ -20,6 +20,10 @@ main{
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 30px;
+    font-family: cursive;
+    font-style: italic;
+    color: #f6753e;
+    text-align: center;
 }
 
 
@@ -81,4 +85,51 @@ li img{
     background-color: white;
     border: 1.5px solid rgb(74, 147, 255);
     color: #0078e2;
+}
+
+footer, .copyRight{
+        display: none;
+    }
+
+@media screen and (min-width: 480px){
+    .welcome_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imageSect{
+        border: 2px solid red;
+    }
+
+    .content{
+        padding: 10px 40px;
+        border: 1px solid red;
+    }
+
+    .aboutContent{
+        margin-top: 50px;
+    }
+
+    .aboutContent h2{
+        font-size: 24px;
+    }
+
+    .aboutContent ul{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .aboutContent ul li{
+        background-color: white;
+    }
+
+    .copyRight{
+        margin-top: 80px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    footer{
+        display: block;
+    }
 }
