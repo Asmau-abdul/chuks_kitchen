@@ -13,6 +13,10 @@ body{
     line-height: 1.5;
 }
 
+main{
+    padding: 20px 40px;
+}
+
 
 .logoSect{
     margin-top: 30px;
@@ -91,6 +95,10 @@ footer, .copyRight{
     }
 
 @media screen and (min-width: 480px){
+    main{
+        padding: 0;
+    }
+
     .welcome_page{
         display: grid;
         grid-template-columns: 1fr 1fr;
