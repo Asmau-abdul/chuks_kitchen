@@ -9,23 +9,22 @@ html{
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
     line-height: 1.5;
 }
-main{
-    padding: 10px 30px;
-}
+
 
 .logoSect{
-    display: grid;
-    grid-template-columns: auto auto;
     margin-top: 30px;
-    font-family: cursive;
-    font-style: italic;
-    color: #f6753e;
     text-align: center;
 }
 
+.logo{
+    font-family: cursive;
+    font-style: italic;
+    color: #f6753e;
+    font-size: 20px;
+}
 
 .signIn{
     text-decoration: none;
@@ -97,26 +96,38 @@ footer, .copyRight{
         grid-template-columns: 1fr 1fr;
     }
 
-    .imageSect{
-        border: 2px solid red;
-    }
-
     .content{
         padding: 10px 40px;
+    }
+
+    .logoSect{
+        display: flex;
         border: 1px solid red;
     }
+
+
+    .logoSect .logo{
+        text-align: left;
+        border: 1px solid green;
+        width: 100%;
+    }
+
+    .logoSect a{
+    }
+
 
     .aboutContent{
         margin-top: 50px;
     }
 
     .aboutContent h2{
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .aboutContent ul{
         display: grid;
         grid-template-columns: auto auto;
+        font-size: 14px;
     }
 
     .aboutContent ul li{
@@ -131,5 +142,32 @@ footer, .copyRight{
 
     footer{
         display: block;
+        background-color: #61402e;
+    }
+
+    .footerContent{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    .footerContent section{
+        padding: 0 30px;
+        font-size: 11px;
+    }
+
+    .footerContent .aboutFooter p{
+        font-size: 14px;
+    }
+
+    .footerContent h2{
+        font-size: 22px;
+    }
+
+    .quickLinks a{
+        display: block;
+        text-decoration: none;
+        color: white;
     }
 }
