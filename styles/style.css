@@ -104,12 +104,10 @@ footer, .chuksCopyRight{
 @media screen and (min-width: 480px){
     main{
         padding: 0;
-        /* max-width: 480px; */
         margin: auto;
     }
 
     footer{
-        /* max-width: 480px; */
         margin: auto;
     }
 
