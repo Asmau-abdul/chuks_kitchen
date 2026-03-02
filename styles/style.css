@@ -21,21 +21,26 @@ main{
 .logoSect{
     margin-top: 30px;
     text-align: center;
+    position: relative;
 }
 
 .logo{
     font-family: cursive;
     font-style: italic;
     color: #f6753e;
-    font-size: 20px;
+    font-size: 24px;
+    padding-top: 100px;
 }
 
 .signIn{
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 10px;
-    width: 80%;
+    width: 40%;
+    right: 0;
+    top: 0;
     text-align: center;
+    position: absolute;
 }
 
 h2{
@@ -90,13 +95,22 @@ li img{
     color: #0078e2;
 }
 
-footer, .copyRight{
+footer, .chuksCopyRight{
         display: none;
     }
+
+
 
 @media screen and (min-width: 480px){
     main{
         padding: 0;
+        /* max-width: 480px; */
+        margin: auto;
+    }
+
+    footer{
+        /* max-width: 480px; */
+        margin: auto;
     }
 
     .welcome_page{
@@ -109,20 +123,21 @@ footer, .copyRight{
     }
 
     .logoSect{
+        position: relative;
         display: flex;
-        border: 1px solid red;
+        padding: 10px;
     }
 
 
     .logoSect .logo{
         text-align: left;
-        border: 1px solid green;
         width: 100%;
+        padding-top: 0;
     }
 
-    .logoSect a{
+    .signIn{
+        width: 150px;
     }
-
 
     .aboutContent{
         margin-top: 50px;
@@ -142,21 +157,20 @@ footer, .copyRight{
         background-color: white;
     }
 
-    .copyRight{
-        margin-top: 80px;
-        font-size: 12px;
+    .chuksCopyRight{
+        font-size: 10px;
         text-align: center;
     }
 
     footer{
         display: block;
         background-color: #61402e;
+        color: white;
     }
 
     .footerContent{
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        color: white;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 40px 20px;
     }
 
@@ -167,6 +181,14 @@ footer, .copyRight{
 
     .footerContent .aboutFooter p{
         font-size: 14px;
+        /* margin-top: -50px; */
+    }
+
+    .footerLogo{
+        font-family: cursive;
+        font-style: italic;
+        color: #f6753e;
+        font-size: 24px;
     }
 
     .footerContent h2{
@@ -177,5 +199,11 @@ footer, .copyRight{
         display: block;
         text-decoration: none;
         color: white;
+    }
+
+    .footerCopyRight{
+        font-size: 10px;
+        padding: 20px 0 50px 50px;
+        color: gray;
     }
 }
